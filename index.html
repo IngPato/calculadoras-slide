@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Calculadoras</title>
+    <link rel="icon" href="IMAGENES/calculadora-icono.ico">
+</head>
+
+<body>
+
+    <div class="controls">
+        <button onclick="changeCalculator('calculator-normal')">Calculadora Matemática</button>
+        <button onclick="changeCalculator('calculator-imc')">Calculadora de IMC</button>
+        <button onclick="changeCalculator('calculator-discount')">Calculadora de Descuentos</button>
+    </div>
+
+
+    <div class="slider-container">
+        <div id="calculator-normal" class="calculator">
+            <!-- Contenido de la calculadora normal -->
+
+            <div class="calculadora">
+
+                <h2>Matemática</h2>
+
+                <div class="pantalla">0</div>
+
+                <button id="c" class="btn">C</button>
+                <button id="borrar" class="btn">←</button>
+                <button class="btn">/</button>
+                <button class="btn">*</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">-</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">+</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button id="igual" class="btn">=</button>
+                <button id="cero" class="btn">0</button>
+                <button class="btn">.</button>
+            </div>
+
+            <style src="CSS/calculator.css"></style>
+            <script src="JS/calculator.js"></script>
+        </div>
+
+        <div id="calculator-imc" class="calculator">
+            <!-- Contenido de la calculadora de IMC -->
+
+            <div class="imc-calculator">
+                <h2>Índice de Masa Corporal</h2>
+                <label for="height">Altura (cm):</label>
+                <input type="number" id="height" placeholder="Ingrese su altura" required>
+
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" placeholder="Ingrese su peso" required>
+
+                <button onclick="calculateIMC()">Calcular IMC</button>
+
+                <div id="result"></div>
+            </div>
+
+            <script src="JS/imc-calculator.js"></script>
+
+
+        </div>
+
+        <div id="calculator-discount" class="calculator">
+            <!-- Contenido de la calculadora de descuento -->
+
+            <div class="discount-calculator">
+                <h2>Descuentos</h2>
+                <label for="originalPrice">Precio Original:</label>
+                <input type="number" id="originalPrice" placeholder="Ingrese el precio original" required>
+
+                <label for="discountPercentage">Porcentaje de Descuento:</label>
+                <input type="number" id="discountPercentage" placeholder="Ingrese el porcentaje de descuento" required>
+
+                <button onclick="calculateDiscount()">Calcular Descuento</button>
+
+                <div id="discountedPrice"></div>
+            </div>
+
+            <script src="JS/discount-calculator.js"></script>
+
+
+        </div>
+    </div>
+
+    <script src="JS/function.js"></script>
+</body>
+
+</html>

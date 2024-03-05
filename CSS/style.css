@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Protest+Riot&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5f7;
+    background-image: linear-gradient(30deg, #1CA7EC 12%, transparent 12.5%, transparent 87%, #1CA7EC 87.5%, #1CA7EC), linear-gradient(150deg, #1CA7EC 12%, transparent 12.5%, transparent 87%, #1CA7EC 87.5%, #1CA7EC), linear-gradient(30deg, #1CA7EC 12%, transparent 12.5%, transparent 87%, #1CA7EC 87.5%, #1CA7EC), linear-gradient(150deg, #1CA7EC 12%, transparent 12.5%, transparent 87%, #1CA7EC 87.5%, #1CA7EC), linear-gradient(60deg, #1CA7EC77 25%, transparent 25.5%, transparent 75%, #1CA7EC77 75%, #1CA7EC77), linear-gradient(60deg, #1CA7EC77 25%, transparent 25.5%, transparent 75%, #1CA7EC77 75%, #1CA7EC77);
+    background-size: 36px 63px;
+    background-position: 0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.calculator {
+    width: 100%;
+}
+
+.controls {
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+
+}
+
+.controls button {
+    background: #1F2F90;
+    color: #e0e0e0;
+    border-radius: 12px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    color: #e0e0e0;
+    margin-block-start: 0;
+    margin-block-end: 20px;
+}
+
+/*---------calculadora matematica--------------*/
+
+
+.calculadora {
+    background-color: #1E1E1E;
+    color: white;
+    width: 500px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #707FF6;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #1F2F90;
+    color: white;
+    border: 0;
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.btn:hover {
+    background-color: #1CA7EC;
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #1F2F90;
+}
+
+#igual:hover {
+    background-color: #e65766;
+}
+
+/*----------calculadora de imc-------------*/
+
+
+.imc-calculator {
+    background-color: #1E1E1E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 90%;
+    background-color: #707FF6;
+    border-radius: 15px;
+    font-family: 'Protest Riot', sans-serif;
+    height: 30px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #1F2F90;
+    cursor: pointer;
+    color: white;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+#result {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Protest Riot', sans-serif;
+    color: white;
+}
+
+
+/*-----------calculadora descuentos------------*/
+
+
+.discount-calculator {
+    background-color: #1E1E1E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+button:hover {
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+#discountedPrice {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Protest Riot', sans-serif;
+    color: white;
+}
