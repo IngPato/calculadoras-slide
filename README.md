@@ -1,2 +1,6 @@
-web:
-https://ingpato.github.io/calculadoras-slide/
+# 🧮 Calculadoras Slide
+
+---
+
+## 🌐 Web del proyecto: 
+👉 https://ingpato.github.io/calculadoras-slide/
